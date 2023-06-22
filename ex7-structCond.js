@@ -5,9 +5,9 @@
 // - Amélioration : remettez-les dans l’ordre
 
 let prompt = require("prompt-sync")();
-let a = parseFloat(prompt("Saisir le premier nombre :"));
-let b = parseFloat(prompt("Saisir le deuxième nombre :"));
-let c = parseFloat(prompt("Saisir le troisième nombre :"));
+let firstNumber = parseFloat(prompt("Saisir le premier nombre :"));
+let secondNumber = parseFloat(prompt("Saisir le deuxième nombre :"));
+let thirdNumber = parseFloat(prompt("Saisir le troisième nombre :"));
 let tab = [a, b, c];
 const CheckOrderNumbers = (a, b, c) => {
   if (a < b && b < c) {
