@@ -9,13 +9,13 @@ let firstNumber = parseFloat(prompt("Saisir le premier nombre :"));
 let secondNumber = parseFloat(prompt("Saisir le deuxième nombre :"));
 let thirdNumber = parseFloat(prompt("Saisir le troisième nombre :"));
 let tab = [a, b, c];
-const CheckOrderNumbers = (a, b, c) => {
-  if (a < b && b < c) {
-    console.log("Les nombres sont dans l'ordre croissant");
-  } else {
-    console.log("Les nombres ne sont pas dans l'ordre croissant");
-  }
+const checkOrderNumbers = (a, b, c) => {
+  const numbersInTab = [a,b,c]
+  const isOrdered = [a,b,c].sort().join(' ') === [a,b, c].joind(' ')
+  console.log(isOrdered ? "Les nombres sont dans l'ordre croissant" : "Les nombres ne sont pas dans l'ordre croissant")
 };
+
+checkOrderNumbers(1, 2, 3)
 CheckOrderNumbers();
 tab.sort();
 console.log("Le Tableau ordonné", tab);
