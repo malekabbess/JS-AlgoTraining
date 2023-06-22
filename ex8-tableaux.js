@@ -1,3 +1,12 @@
+//- Ecrire l’algorithme qui, à l’aide d’un tableau de tableaux, affiche
+//la grille suivante :
+//+---+---+---+
+//|   |   |   |
+//+---+---+---+
+//|   |   |   |
+//+---+---+---+
+//|   |   |   |
+//+---+---+---+
 function AfficheGrille(t) {
   for (let i = 0; i < t.length; i++) {
     let row = t[i];
